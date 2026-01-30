@@ -1,0 +1,54 @@
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์จังหวัดปทุมธานี</title>
+    <style>
+        /* จัดหน้าจอให้เต็ม 100% และแบ่งส่วน */
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        
+        .top-container {
+            height: 15%; /* ส่วนหัวสูง 15% */
+            width: 100%;
+        }
+        
+        .bottom-container {
+            height: 85%; /* ส่วนล่างสูง 85% */
+            width: 100%;
+            display: flex; /* แบ่งซ้ายขวา */
+        }
+        
+        .left-menu {
+            width: 20%; /* เมนูซ้ายกว้าง 20% */
+            border-right: 2px solid #ccc;
+        }
+        
+        .right-content {
+            width: 80%; /* เนื้อหาขวากว้าง 80% */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-container">
+        <iframe src="top.html" name="top"></iframe>
+    </div>
+
+    <div class="bottom-container">
+        <div class="left-menu">
+            <iframe src="left.html" name="left"></iframe>
+        </div>
+        
+        <div class="right-content">
+            <iframe src="right.html" name="right"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
